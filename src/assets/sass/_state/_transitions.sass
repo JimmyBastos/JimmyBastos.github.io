@@ -1,0 +1,17 @@
+.fade-enter-active, .fade-leave-active
+  transition: opacity .325s ease
+
+.fade-enter, .fade-leave-active
+  opacity: 0
+
+.slide-left-enter, .slide-right-leave-active
+  opacity: 0
+  transition: .75s
+  transform: translate(0, 100%)
+  transform: translate(100%, 0)
+
+.slide-left-leave-active, .slide-right-enter
+  opacity: 0
+  transition: .75s
+  transform: translate(-100%, 0)
+  transform: translate(-100%, 0)

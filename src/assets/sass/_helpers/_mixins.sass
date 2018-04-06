@@ -1,0 +1,15 @@
+// ======== Clear fix
+@mixin clearfix
+  &::before,
+  &::after
+    content: ''
+    display: table
+
+  &::after
+    clear: both
+
+
+// ======== Pixel para rem
+@function px-to-rem($size)
+  @return $size / 16 * 1rem
+
